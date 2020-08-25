@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+.ltd-bg1{
+	background-color: #294f3a;
+}
+.ltd-bg2{
+	background-color: #557463;		
+}
+.ltd-bg3{
+	background-color: #b4d6ce;
+}
+.ltd-bg4{
+	background-color: #b4d6ce;
+}
+.ltd-bg5{
+	background-color: #cff0e8;
+}
+
+.ltd-bg6{
+	background-color: #eef1f0;
+}
+.ltd-bg-tab{
+	background-color: #ebf7f4;
+}
+.ltd-0radius{
+	border-radius: 0 !important;
+}
+.ltd-dubai-regular{
+	font-family: dubai-regular;	
+}
+.ltd-dubai-light{
+	font-family: Dubai-light;	
+}
+.ltd-title-font{
+	font-family: Dubai-bold;
+	color: #294f3a;
+}
+.ltd-dubai-bold{
+	font-family: Dubai-bold;
+}
+.ltd-dubai-medium{
+	font-family: Dubai-medium;	
+}
+.ltd-color1{
+	color: #294f3a;
+}
+.ltd-color5{
+	color: #cff0e8;
+}
+.ltd-font{
+font-size: 75%;
+font-weight: 700;
+line-height: 1;
+//white-space: nowrap;
+}
+.ltd-sidebar{
+	position: fixed;
+	overflow-x: hidden;
+	height: 100%;
+	right: 0 !important;
+	width: 16.67%;
+}
+.ltd-mian{
+	position: fixed;
+	height: 100%;
+	right: 0 !important;
+	margin-right: 16.67%
+}
+
+.ltd-icon:hover{
+	cursor: pointer;
+	color: #557463;
+}
+.ltd-tabs{
+	position: fixed;
+	width: 80%;
+	height: 100%;	
+}
+.ltd-content{
+	margin-right: 25px;
+	margin-top: 20px;
+}
+.ltd-content ul{
+	padding-right: 0;
+}
+.ltd-close-tab:hover{
+	color: red;
+}
+#ltd-sidebar{
+	transition: 0.5S;
+}
+#ltd-sidebar div{
+	transition: 0.3S;
+}
+#ltd-main{
+	transition: 0.5S;
+}
+#flip{
+	width: 20px; 
+	height: 50px;
+	z-index: 2;
+}
+#avatar{
+	z-index: 2;
+	left: 0!important;
+	top: 0 !important;
+}
+#srchbx{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0.5em 0.5em;
+	border-top-left-radius: 0.5em 0.5em;
+}
+#srchic{
+	border-top-right-radius: 0.5em 0.5em;
+	border-bottom-right-radius: 0.5em 0.5em;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+#ltd-menu{
+	right: 10px;
+}
+#ltd-menu img{
+	height: 15px; 
+	margin-left: 10px;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#preferences{
+	position: absolute; 
+	right: 0;	
+}
+#addtab span{
+	opacity: 50%
+}
+#addtab span:hover{
+	opacity: 100%;
+	cursor: pointer;
+}

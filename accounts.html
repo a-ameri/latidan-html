@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/ltd-color-font.css">
+
+<link rel="stylesheet" href="css/ltd-account.css">
+
+<link rel="stylesheet" href="css/manual-bootstrap.css">
+
+<link rel="stylesheet" href="css/all.css">
+
+<link rel="stylesheet" href="css/ltd-font.css">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<title>Untitled Document</title>
+
+</head>
+
+
+
+<body dir="rtl" class="ltd-bg-tab text-right">
+
+<div class="container-fluid ltd-dubai-light">
+
+	<!--begin header-->
+
+	<div id="ltd-main-action" class="row w-100 ltd-bg7">
+
+		<div class="col-md-5 d-flex justify-content-start w-100 ltd-dubai-medium">
+
+			<div class="badge mt-1 pt-1">
+
+				<img src="images/Add Tree.png" alt="add tree" height="100%">
+
+				<span>حساب معین جدید</span>
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/Delete.png" alt="delete" height="100%">
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/refresh.png" alt="refresh" height="100%">
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/sort.png" alt="sort" height="100%">
+
+				<span>مرتب سازی</span>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-6 d-flex justify-content-start">
+
+			<div class="input-group mt-1">
+
+				<div class="input-group-prepend">
+
+					<span id="srchic" class="input-group-text fa fa-search border-0 pt-1"></span>
+
+				</div>
+
+				<input id="srchbx" type="text" class="border-0 w-75">
+
+			</div>
+
+		</div>
+
+		<div class="col-md-1 d-flex justify-content-end">
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/help.png" alt="help" height="100%">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--end header-->
+
+	<!--begin content-->
+
+	<div id="ltd-content" class="row">
+
+		<!--begin tree view-->
+
+	  <div class="col-md-4 h-100">
+
+		  <div class="ltd-tree-view ltd-dubai-light ltd-bg5">
+
+		  	<div>			
+
+				<ul id="ltd-tree-view">
+					<li data-target="#all"><span>ساختار حساب</span></li>
+					<ul id="all" class="general-account">
+
+						<li  data-target="#g10"><span>10</span><span class="account-name">دارایی های جاری</span></li>
+
+						<ul id="g10"  class="total-account">
+
+							<li data-target="#t1001"><span>1001</span><span class="account-name">موجودی نقد و بانک</span></li>
+
+							<ul id="t1001"  class="assign-account">
+
+								<li><span>100101</span><span class="account-name">موجودی بانک های ریالی</span></li>
+
+							</ul>
+
+						</ul>
+
+						<li><span>20</span><span class="account-name">بدهی های جاری</span></li>	
+
+						<li><span>30</span><span class="account-name">حقوق صاحبان سهام</span></li>
+
+						<li><span>40</span><span class="account-name">درآمد ها</span></li>
+
+						<li><span>50</span><span class="account-name">هزینه ها</span></li>
+
+					</ul>
+
+				</ul>	
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<!--end tree view-->
+
+		<!--begin account content-->
+
+		  <div class="col-md-8">
+
+			<div id="ltd-account-content" class="ltd-bg5 ltd-dubai-light">
+
+				<iframe class="ltd-iframe" src="total-account.html" title="total account"></iframe>
+
+			</div>
+
+		  </div>
+
+	  	<!--end account content-->
+
+	  <script>
+
+				$(document).ready(function(){
+
+					$(".ltd-tree-view ul").addClass("list-group");
+
+					$("#ltd-tree-view  ul").css("padding-right","25px");
+
+					$("#ltd-tree-view ul").addClass("nested collapse");
+
+					$(".ltd-tree-view li").addClass("list-group-item list-group-item-action");
+
+					$(".ltd-tree-view li").css("border-style","none");
+					
+					$(".ltd-tree-view li").css("padding-right","41px");
+
+					$("#ltd-tree-view > li").attr("data-toggle","collapse");
+
+					$(".general-account > li").attr("data-toggle","collapse");
+
+					$(".total-account > li").attr("data-toggle","collapse");
+
+					$(".general-account > li").prepend('<img src="images/books.png" alt="general-account">&nbsp;');
+
+					$(".total-account > li").prepend('<img src="images/book.png" alt="total-account">&nbsp;');
+
+					$(".assign-account > li").prepend('<img src="images/paper.png" alt="assign-account">&nbsp;');
+					
+					var plus = '<span class="far fa-plus-circle ml-2"></span>';
+					
+					$("#ltd-tree-view > li").prepend(plus);
+					
+					$(".general-account > ul").prev().prepend(plus);		
+					
+					$(".total-account > ul").prev().prepend(plus);	
+					
+					$("#ltd-tree-view > li").css("padding-right","");
+					
+					$(".general-account > ul").prev().css("padding-right","");		
+					
+					$(".total-account > ul").prev().css("padding-right","");	
+					
+					$("#ltd-tree-view li").click(function(){
+
+						$("#ltd-tree-view li").removeClass("active");
+
+						$(this).addClass("active");
+
+					});
+					
+					function li_click(){
+						if($(this).children(".fa-plus-circle").length){
+							$(this).children(".fa-plus-circle").addClass("fa-minus-circle");
+							$(this).children(".fa-plus-circle").removeClass("fa-plus-circle");
+						}else{
+							$(this).children(".fa-minus-circle").addClass("fa-plus-circle");
+							$(this).children(".fa-minus-circle").removeClass("fa-minus-circle");
+						}						
+					}					
+					
+					$("#ltd-tree-view li").click(li_click);
+					$("#ltd-tree-view li").dblclick(li_click);
+				});
+
+		</script>
+
+	</div>
+
+	<!--end content-->
+
+
+
+	</div>
+
+</body>
+
+</html>
+

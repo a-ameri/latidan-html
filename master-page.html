@@ -1,0 +1,470 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/ltd-main.css">
+
+<link rel="stylesheet" href="css/ltd-color-font.css">
+
+<link rel="stylesheet" href="css/manual-bootstrap.css">
+
+<link rel="stylesheet" href="css/all.css">
+
+<link rel="stylesheet" href="css/ltd-font.css">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<title>نرم افزار جامع حسابداری لاتیدان</title>
+
+</head>
+
+
+
+<body class="ltd-bg text-right" dir="rtl">
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<!--begin sidebar-->
+
+			<div id="ltd-sidebar" class="col-sm-2  ltd-sidebar ltd-bg2">
+
+				<div class="w-100 d-flex justify-content-center">
+
+					<div class="row-cols-1 w-100 ltd-dubai-medium ltd-color111">
+
+						<!--begin company name-->
+
+						<div class="w-100 badge ltd-bg5 mt-2 p-2">
+
+							<span>شرکت پدید آوران امید پارس</span>
+
+						</div>
+
+						<!--end company name-->
+
+						<!--begin recently-->
+
+						<div class="mt-3 ltd-font sidebar-obj" style="right: 10px">
+
+							 <ul class="list-group ltd-0radius p-0">
+
+							  <li href="#" class="list-group-item list-group-item-action text-center">صفحات به تازگی بازدید شده</li>							  
+
+							</ul> 
+
+						</div>
+
+						<!--end recently-->
+
+						<!--begin menu-->
+
+						<div id="ltd-menu" class=" mt-3 ltd-font sidebar-obj">
+
+							 <ul class="list-group ltd-0radius p-0">
+
+							  <li data-toggle="collapse" data-target="#ul2-1" href="#" 
+
+									class="list-group-item list-group-item-action text-center ">
+
+								  	<span>همه صفحات</span>
+
+							 </li>
+
+							  <ul id="ul2-1" class="list-group ltd-0radius p-0 collapse">
+
+								  <li href="#" class="list-group-item list-group-item-action">
+
+									  <span>
+
+										  <img src="images/Menu/omoomi.png" alt="pic">عمومی
+
+									  </span>
+
+								  </li>
+
+								  <li data-toggle="collapse" data-target="#ul2-2" href="#" class="list-group-item list-group-item-action">
+
+									  <span>
+
+										  <img src="images/Menu/mali.png" alt="pic">مالی
+
+									  </span>
+
+								  </li>
+
+								  <ul id="ul2-2" class="list-group ltd-0radius p-0 collapse">
+
+									  <li href="#" class="list-group-item list-group-item-action">
+
+										  <span><img src="images/Menu/other.png" alt="pic">دارایی
+
+										  </span>
+
+									  </li>
+
+									  <li data-toggle="collapse" data-target="#ul3-2" href="#" class="list-group-item list-group-item-action">		<span>
+
+										  <img src="images/Menu/daftarkol.png" alt="pic">دفتر کل
+
+										  </span>
+
+									  </li>
+
+									  <ul id="ul3-2" class="list-group ltd-0radius p-0 collapse">
+
+										  <li href="#" class="list-group-item list-group-item-action">
+
+											  <span>
+
+												  <img src="images/Menu/other.png" alt="pic">فهرست
+
+											  </span>
+
+										  </li>
+
+										  <li href="#" class="list-group-item list-group-item-action">
+
+											  <span>
+
+												  <img src="images/Menu/paye.png" alt="pic">اطلاعات پایه
+
+											  </span>
+
+										  </li>
+
+										  <li href="#" class="list-group-item list-group-item-action">
+
+											  <span>
+
+												  <img src="images/Menu/hesab.png" alt="pic">حساب ها
+
+											  </span>
+
+										  </li>
+
+									  </ul>
+
+								  </ul>								   
+
+							  </ul> 
+
+							</ul> 
+
+						</div>
+
+						<!--end menu-->
+
+					</div>					
+
+				</div>
+
+			</div>
+
+			<!-- end sidebar-->
+
+			<!--begin main-->
+
+			<div id="ltd-main" class="col-sm-10 ltd-mian ltd-bg3 px-0 ">
+
+				<!--begin flip-->
+
+				<div>
+
+					<i id="flip" class="fa fa-angle-right fa-2x pt-2 mt-5 ltd-bg2 position-fixed text-white" ></i>
+
+				</div>
+
+				<!--end flip-->
+
+				<!--begin header-->
+
+				<div class="row mr-0 mt-2 ltd-color1" >
+
+					<div class="col-sm-4 d-flex justify-content-start ltd-dubai-medium">
+
+						<div class="mr-0">
+
+							<span id="preferences" class="fa fa-ellipsis-v fa-2x ltd-icon"></span>
+
+						</div>
+
+						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
+
+							<span>1399/10/17</span>
+
+						</div>
+
+						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
+
+							<span>دفتر کل : دفتر اصلی</span>
+
+						</div>
+
+						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
+
+							<span>دوره مالی : 99</span>
+
+						</div>
+
+					</div>
+
+					<div class="col-sm-4 ltd-dubai-light" >
+
+						<div class="input-group">
+
+							<div class="input-group-prepend">
+
+								<span id="srchic" class="input-group-text fa fa-search ltd-bg5 border-0"></span>
+
+							</div>
+
+							<input id="srchbx" type="text" class="border-0 ltd-bg5 w-75">
+
+						</div>
+
+					</div>
+
+					<div class="col-sm-4 d-flex justify-content-end ltd-dubai-medium" >
+
+						<div>
+
+							<span class="far fa-question-circle fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+
+						</div>
+
+						<div>
+
+							<span class="far fa-cog fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+
+						</div>
+
+						<div>
+
+							<span class="far fa-bell fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+
+						</div>
+						
+						<div id="avatar-badge" class="ltd-avt badge ltd-bg5 p-2  ltd-header-badge">
+
+							<span>عادل عامری</span>
+
+						</div>
+						
+					</div>	
+						
+					<div id="avatar" class="ltd-avt p-0 m-0 position-fixed">
+
+						<img src="images/avatar.png" class="rounded-circle ltd-bg5 pt-0 mt-0" alt="Cinque Terre" style="width: 50px; height: 50px">
+
+					</div>
+					
+				</div>
+
+				<!--ned header-->
+
+				<!--begin content-->				
+
+				<div class="ltd-content ltd-color1">
+
+					<!--begin tab title-->
+
+					<ul class="nav nav-tabs ltd-dubai-bold border-0" >
+
+						<li class="nav-item ltd-bg-tab" dir="ltr">
+
+							<a data-toggle="tab" href="#home" class="nav-link active">
+
+								<span class="fa fa-times ltd-close-tab"></span>&nbsp;&nbsp;اطلاعات پایه 
+
+								<img src="images/Menu/paye.png" alt="pic" style="height: 25px;">
+
+							</a>
+
+						  </li>
+
+						<li class="nav-item ltd-bg-tab" dir="ltr">
+
+							<a data-toggle="tab" href="#menu1" class="nav-link">
+
+								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی اول
+
+								<img src="images/Menu/daftarkol.png" alt="pic" style="height: 25px;">
+
+							</a>
+
+						  </li>
+
+						<li class="nav-item ltd-bg-tab" dir="ltr">
+
+							<a data-toggle="tab" href="#menu2" class="nav-link">
+
+								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی دوم
+
+								<img src="images/Menu/omoomi.png" alt="pic" style="height: 25px;">
+
+							</a>
+
+						  </li>
+
+						<li class="nav-item ltd-bg-tab" dir="ltr">
+
+							<a data-toggle="tab" href="#menu3" class="nav-link">
+
+								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی سوم
+
+								<img src="images/Menu/other.png" alt="pic" style="height: 25px;">
+
+							</a>
+
+						  </li>
+
+						<li id="addtab">
+
+							<span class="fas fa-plus-square fa-2x mr-2 mt-2"></span>
+
+						</li>
+
+					</ul>
+
+					<!--end tab title-->
+
+					<!--begin tab content-->
+
+					<div id="tab-content" class="ltd-tabs tab-content ltd-bg-tab ltd-dubai-regular">
+
+						<div id="home" class="tab-pane fade in active show">
+
+							
+
+						  <iframe src="Accounts.html" title="accounts" class="ltd-iframe"></iframe>
+
+						</div>
+
+						<div id="menu1" class="tab-pane fade h-75 w-75">
+
+						  <h3>Menu 1</h3>
+
+						  <iframe class="w-100 h-100" src="test.html" title="test"></iframe>
+
+						</div>
+
+						<div id="menu2" class="tab-pane fade">
+
+							<h3>Menu 3</h3>
+
+						  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+						</div>
+
+						<div id="menu3" class="tab-pane fade">
+
+						  <h3>Menu 3</h3>
+
+						  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+						</div>
+
+					</div>
+
+					<!--end tab content-->
+
+				</div>
+
+				<!--end content-->
+
+			</div>
+
+			<!--end main-->
+
+		</div>		
+
+	</div>
+
+	<script>
+
+		$("#flip").click(function(){
+
+			if(document.getElementById("ltd-sidebar").style.width == "0%")
+
+			{
+
+				document.getElementById("ltd-sidebar").style.width = "16.67%";
+
+				document.getElementById("ltd-main").style.marginRight = "16.67%";
+
+				document.getElementById("tab-content").style.width = "80%";	
+
+				$("#ltd-sidebar").addClass("col-sm-2");
+
+				$("#ltd-main").removeClass("col-sm-12");
+
+				$("#ltd-main").addClass("col-sm-10");
+
+				$("#flip").removeClass("fa-angle-left");
+
+				$("#flip").addClass("fa-angle-right");			
+
+			}
+
+			else
+
+			{
+
+				$("#ltd-sidebar").removeClass("col-sm-2");
+
+				document.getElementById("ltd-sidebar").style.width = "0%";
+
+				document.getElementById("ltd-main").style.marginRight = "0%";
+
+				document.getElementById("tab-content").style.width = "97%";	
+
+				$("#ltd-main").removeClass("col-sm-10");
+
+				$("#ltd-main").addClass("col-sm-12");
+
+				$("#flip").removeClass("fa-angle-right");
+
+				$("#flip").addClass("fa-angle-left");
+
+			}
+
+		});
+
+		$(document).ready(function(){
+
+			$(".sidebar-obj > ul > li").addClass("ltd-bg1");
+
+			$(".sidebar-obj > ul > li").addClass("ltd-color5");
+
+			$(".sidebar-obj > ul > ul> li").addClass("ltd-bg5");
+
+			$(".sidebar-obj > ul > ul> ul > li").addClass("ltd-bg6");
+
+			$(".sidebar-obj > ul > ul> ul > ul > li").addClass("ltd-bg3");
+
+			$(".sidebar-obj >ul > ul").addClass("show");
+
+			$(".sidebar-obj > ul > ul> ul > li > span").css("padding-right","10px");
+
+			$(".sidebar-obj > ul > ul> ul > ul > li > span").css("padding-right","20px");
+
+		});
+
+	</script>
+
+</body>
+
+</html>
+
