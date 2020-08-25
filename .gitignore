@@ -7,5 +7,7 @@ webfonts/
 css/
 Html Forms.rar
 js/
+
+#do not ignore
 !css/ltd*
 !css/manual-bootstrap.css
