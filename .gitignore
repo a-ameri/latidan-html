@@ -1,12 +1,12 @@
-less/
-metadata/
-scss/
-sprites/
-svgs/
-webfonts/
-css/
+/less/
+/metadata/
+/scss/
+/sprites/
+/svgs/
+/webfonts/
+/css/
 Html Forms.rar
-js/
+/js/
 
 #do not ignore
 !/css/manual-bootstrap.css
