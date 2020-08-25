@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "Dubai-bold";
+	src: url("../font/Dubai-Bold.otf");
+}
+@font-face{
+	font-family: "Dubai-light";
+	src: url("../font/Dubai-Light.otf");
+}
+@font-face{
+	font-family: "Dubai-medium"
+	src: url("../font/Dubai-Medium.otf");
+}
+@font-face{
+	font-family: "Dubai-regular"
+	src:url("../font/Dubai-Regular.otf");
+}
