@@ -8,15 +8,15 @@
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
+<link rel="stylesheet" href="css/manual-bootstrap.css">
+
+<link rel="stylesheet" href="css/ltd-color-font.css">
+
+<link rel="stylesheet" href="css/ltd-total-account.css">
+
 <link rel="stylesheet" href="css/all.css">
 
-<link rel="stylesheet" href="ltd-css/manual-bootstrap.css">
-
-<link rel="stylesheet" href="ltd-css/ltd-color-font.css">
-
-<link rel="stylesheet" href="ltd-css/ltd-total-account.css">
-
-<link rel="stylesheet" href="ltd-css/ltd-font.css">
+<link rel="stylesheet" href="css/ltd-font.css">
 
 <script src="js/jquery.min.js"></script>
 
@@ -84,14 +84,27 @@
 
 					<li class="nav-item ltd-bg-tab" dir="ltr">
 
+						<a data-toggle="tab" href="#details" class="nav-link"> سطوح تفصیلی
+
+						</a>
+
+					  </li>
+					
+					<li class="nav-item ltd-bg-tab" dir="ltr">
+
+						<a data-toggle="tab" href="#description" class="nav-link"> شرح های استاندارد
+
+						</a>
+
+					  </li>
+					
+					<li class="nav-item ltd-bg-tab" dir="ltr">
+
 						<a data-toggle="tab" href="#history" class="nav-link"> گردش حساب
 
 						</a>
 
 					  </li>
-
-
-
 				</ul>
 
 			</div>
@@ -110,23 +123,24 @@
 
 							<div class="col-2 mr-5 my-2">
 
-								<label for="AGIsActive">گروه حساب</label>
+								<label for="AAIsActive" class="ltd-dubai-bold">حساب معین</label>
 
 							</div>						  
 
 						</div>
-
+						
+						<!--AAIsActive-->
 						<div class="row">
 
 							<div class="col-2 mr-5 my-2">
 
-								<label for="sel1">وضعیت حساب</label>
+								<label for="AAIsActive" >وضعیت حساب</label>
 
 							</div>
 
 							<div class="col-7 ml-3 my-2 input-group-sm">
 
-								<select class="form-control font-weight-light ltd-dubai-regular" id="AGIsActive" name="AGIsActive">
+								<select class="form-control font-weight-light ltd-dubai-regular ltd-0radius" id="AAIsActive" name="AAIsActive">
 
 									<option>فعال</option>
 
@@ -137,50 +151,52 @@
 							</div>
 
 						</div>
-
+						<!--AACode-->
 						<div class="row">
 
 							<div class="col-2 mr-5 my-2">
 
-							  <label for="AGCode">کد حساب</label>
+							  <label for="AACode">کد حساب</label>
 
 							</div>
 
-							<div class="col-7 ml-3 my-2 input-group-sm">
+							<div class="input-group col-7 ml-3 my-2 input-group-sm">
 
-							  <input type="text" class="form-control font-weight-light ltd-dubai-regular" id="AGCode">
-
+							  <input type="text" class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AACode">
+								<div id="ltd-precode" class="input-group-append">
+								  <span class="input-group-text ltd-0radius border-0">1001</span>
+								</div>
 							</div>
 
 						</div>						
-
+						<!--AAName-->
 						<div class="row">
 
 							<div class="col-2 mr-5 my-2">
 
-							  <label for="AGName">عنوان حساب</label>
+							  <label for="AAName">عنوان حساب</label>
 
 							</div>
 
 							<div class="col-7 ml-3 my-2 input-group-sm">
 
-							  <input type="text" class="form-control font-weight-light ltd-dubai-regular" id="AGName">
+							  <input type="text" class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AAName">
 
 							</div>
 
 						</div>
-
+						<!--ATID-->
 						<div class="row">
 
 							<div class="col-2 mr-5 my-2">
 
-								<label for="AGType">نوع حساب</label>
+								<label for="ATID">نوع حساب</label>
 
 							</div>
 
 							<div class="col-7 ml-3 my-2 input-group-sm">
 
-								<select class="form-control font-weight-light ltd-dubai-regular" id="AGType" name="AGType">
+								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="ATID" name="ATID">
 
 									<option>دائم</option>
 
@@ -193,18 +209,18 @@
 							</div>
 
 						</div>
-
+						<!--AEID-->
 						<div class="row">
 
 							<div class="col-2 mr-5 my-2">
 
-								<label for="AGEssence">ماهیت حساب</label>
+								<label for="AEID">ماهیت حساب</label>
 
 							</div>
 
 							<div class="col-7 ml-3 my-2 input-group-sm">
 
-								<select class="form-control font-weight-light ltd-dubai-regular" id="AGEssence" name="AGEssence">
+								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AEID" name="AEID">
 
 									<option>بدهکار</option>
 
@@ -217,12 +233,72 @@
 							</div>
 
 						</div>
+						<!--AAIsFollow-->
+						<div class="row">
+
+							<div class="col-2 mr-5 my-2">
+
+								<label for="AAIsFollow">ویژگی پیگیری</label>
+
+							</div>
+
+							<div class="col-7 ml-3 my-2 input-group-sm">
+
+								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AAIsFollow" name="AAIsFollow">
+
+									<option>دارد</option>
+
+									<option>ندارد</option>
+
+							  	</select>
+
+							</div>
+
+						</div>
+						<!--CAID-->
+						<div class="row">
+
+							<div class="col-2 mr-5 my-2">
+
+								<label for="CAID">ماهیت حساب</label>
+
+							</div>
+
+							<div class="col-7 ml-3 my-2 input-group-sm">
+
+								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="CAID" name="CAID">
+
+									<option>مهم نیست</option>
+
+									<option>فقط مین</option>
+
+									<option>معین و تمامی سطوح تفصیلی</option>
+									
+									<option>معین و سطوح تفصیلی انتخابی</option>
+
+							  	</select>
+
+							</div>
+
+						</div>
+
+					</div>
+					
+					<div id="details" class="tab-pane fade">
+
+						123
+
+					</div>
+					
+					<div id="description" class="tab-pane fade">
+
+						456
 
 					</div>
 
 					<div id="history" class="tab-pane fade">
 
-						456
+						789
 
 					</div>						
 
