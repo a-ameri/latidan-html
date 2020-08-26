@@ -90,5 +90,29 @@ div .badge{
 	margin-top: 37px;
 }
 #ltd-precode{
-	margin-bottom: 0.5%;
+	margin-bottom: 0.25%;
+}
+#assign-col-1{
+	margin-top: 1%;
+	margin-right: 3%;
+	width: 20%;
+	height: 80%;
+	position: fixed;
+	overflow-x: hidden;
+}
+#assign-col-2{
+	margin-top: 1%;
+	margin-right: 24%;
+	width: 35%;
+	height: 80%;
+	position: fixed;
+	overflow-x: hidden;
+}
+#assign-col-3{
+	margin-top: 1%;
+	margin-right: 60%;
+	width: 35%;
+	height: 80%;
+	position: fixed;
+	overflow-x: hidden;
 }
