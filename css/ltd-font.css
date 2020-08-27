@@ -2,17 +2,17 @@
 /* CSS Document */
 @font-face{
 	font-family: "Dubai-bold";
-	src: url("../font/Dubai-Bold.otf");
+	src: url("../font/LATIDAN-BOLD.otf");
 }
 @font-face{
 	font-family: "Dubai-light";
-	src: url("../font/Dubai-Light.otf");
+	src: url("../font/LATIDAN-REGULAR.otf");
 }
 @font-face{
-	font-family: "Dubai-medium"
-	src: url("../font/Dubai-Medium.otf");
+	font-family: "Dubai-medium";
+	src: url("../font/LATIDAN-MEDIUM.otf");
 }
 @font-face{
-	font-family: "Dubai-regular"
-	src:url("../font/Dubai-Regular.otf");
+	font-family: "Dubai-regular";
+	src:url("../font/LATIDAN-REGULAR.otf");
 }
