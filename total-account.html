@@ -288,13 +288,40 @@
 
 						<div class="row">
 							<div id="assign-col-1">
-								1
+								<div class="list-group">
+									<a id="lvl04" href="#" class="level-item list-group-item list-group-item-action">
+										<input id="chb04" type="checkbox" class="form-check-input" value="">
+										<span>سطح چهارم</span>
+									</a>
+									<a id="lvl05" href="#" class="level-item list-group-item list-group-item-action">
+										<input id="chb05" type="checkbox" class="form-check-input" value="">
+										<span>سطح پنجم</span>
+									</a>
+									<a id="lvl06" href="#" class="level-item list-group-item list-group-item-action">
+										<input id="chb06" type="checkbox" class="form-check-input" value="">
+										<span>سطح ششم</span>
+									</a>
+								</div> 
 							</div>
-							<div id="assign-col-2" class="ltd-bg-tab">
-								2
+							<div id="assign-col-2" class="assign-list ltd-bg-tab">
+								<span>تفصیلی های انتخاب شده</span>
+								<div>
+									<ul>
+										<li><span class="fas fa-times">&nbsp;&nbsp;</span>حساب بانکی</li>
+									</ul>
+								</div>
 							</div>
-							<div id="assign-col-3" class="ltd-bg-tab">
-								3
+							<div id="assign-col-3" class="assign-list ltd-bg-tab">
+								<span>تمام تفصیلی ها</span>
+								<div>
+									<ul>
+										<li>پروژه</li>
+										<li>قرارداد</li>
+										<li>شرکت</li>
+										<li>شخص</li>
+										<li>مرکز هزینه</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 
@@ -321,6 +348,17 @@
 		</div>
 
 	</div>
+
+	<!--begin script-->
+	<script>
+		$(document).ready(function(){
+			$(".level-item").click(function(){
+				$(".level-item").removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>
+	<!--end script-->
 
 </body>
 

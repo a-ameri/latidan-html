@@ -52,6 +52,40 @@ div .badge{
 
 }
 
+.level-item{
+	border: none;
+}
+
+.level-item.active{
+	background-color: #ebf7f4;
+	color: #495057;
+}
+
+.level-item span{
+	margin-right: 20px;
+}
+
+.assign-list span{
+	margin-right: 20px;
+}
+
+.assign-list div{
+	margin-top: 20px;
+}
+
+.assign-list div ul{
+	list-style-type: none;
+}
+
+.assign-list div ul li{
+	padding: 2.5px 0;
+}
+
+.assign-list div ul .fa-times:hover{
+	color: red;
+	cursor: pointer;
+}
+
 #tab-content{
 
 	background-color: white;
@@ -115,4 +149,10 @@ div .badge{
 	height: 80%;
 	position: fixed;
 	overflow-x: hidden;
+}
+#assign-col-3 div ul li:hover{
+	background-color: #97c0b6;
+	display: block;
+	margin-left: 20px;
+	cursor: pointer;
 }
