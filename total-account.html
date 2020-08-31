@@ -307,7 +307,7 @@
 								<span>تفصیلی های انتخاب شده</span>
 								<div>
 									<ul>
-										<li><span class="fas fa-times">&nbsp;&nbsp;</span>حساب بانکی</li>
+										<li><span class="fas fa-times"></span><span>حساب بانکی</span></li>
 									</ul>
 								</div>
 							</div>
@@ -357,6 +357,21 @@
 				$(this).addClass("active");
 			});
 		});
+		
+		$("#assign-col-3 li").dblclick(addCol3);
+		$("#assign-col-2 .fa-times").click(addCol2);
+		function addCol2(){
+			var sibling = $(this).next();
+			$(this).parent().remove();
+			var temp = $('<li>' + sibling.html() + '</li>');
+			$("#assign-col-3 ul").append(temp);
+		}
+		function addCol3(){
+			var item = $(this).html();
+			$(this).remove();
+			var temp = $('<li><span class="fas fa-times"></span><span>' + item + '</span></li>');
+			$("#assign-col-2 ul").append(temp);
+		}
 	</script>
 	<!--end script-->
 
