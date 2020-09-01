@@ -329,7 +329,32 @@
 					
 					<div id="description" class="tab-pane fade">
 
-						456
+						<div class="form-group">					
+							<label for="desc">شرح معین</label>
+							<div class="input-group mb-3">										
+								<input type="text" class="form-control ltd-0radius" id="desc" name="desc">
+								<div class="input-group-append">
+								  <button class="btn btn-success ltd-0radius" type="button">+</button>
+								</div>
+							</div>
+						</div>
+						<div class="list-group ta-desc">
+							<div id="desc01" class="list-group-item list-group-item-action">
+								<span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</span>
+								<span>&nbsp;&nbsp;</span>
+								<span class="fas fa-times"></span>
+							</div>
+							<div id="desc02" class="list-group-item list-group-item-action">
+								<span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</span>
+								<span>&nbsp;&nbsp;</span>
+								<span class="fas fa-times"></span>
+							</div>
+							<div id="desc03" class="list-group-item list-group-item-action">
+								<span>متن بعدی</span>
+								<span>&nbsp;&nbsp;</span>
+								<span class="fas fa-times"></span>								
+							</div>
+						</div>
 
 					</div>
 
@@ -365,7 +390,7 @@
 			var sibling = $(this).next();
 			$(this).parent().remove();
 			var temp = $('<li>' + sibling.html() + '</li>');
-			$(temp).click(addCol2);
+			$(temp).dblclick(addCol2);
 			$("#assign-col-3 ul").append(temp);
 		}
 

@@ -86,6 +86,11 @@ div .badge{
 	cursor: pointer;
 }
 
+.ta-desc .fa-times:hover{
+	cursor: pointer;
+	color: red;
+}
+
 #tab-content{
 
 	background-color: white;
@@ -155,4 +160,7 @@ div .badge{
 	display: block;
 	margin-left: 20px;
 	cursor: pointer;
+}
+#description{
+	margin: 10px;
 }
