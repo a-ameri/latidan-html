@@ -358,20 +358,25 @@
 			});
 		});
 		
-		$("#assign-col-3 li").dblclick(addCol3);
-		$("#assign-col-2 .fa-times").click(addCol2);
-		function addCol2(){
+		$("#assign-col-3 li").dblclick(addCol2);
+		$("#assign-col-2 .fa-times").click(addCol3);
+
+		function addCol3(){
 			var sibling = $(this).next();
 			$(this).parent().remove();
 			var temp = $('<li>' + sibling.html() + '</li>');
+			$(temp).click(addCol2);
 			$("#assign-col-3 ul").append(temp);
 		}
-		function addCol3(){
+
+		function addCol2(){
 			var item = $(this).html();
 			$(this).remove();
 			var temp = $('<li><span class="fas fa-times"></span><span>' + item + '</span></li>');
+			$(temp).children(".fa-times").click(addCol3);
 			$("#assign-col-2 ul").append(temp);
 		}
+
 	</script>
 	<!--end script-->
 
