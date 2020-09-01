@@ -81,11 +81,10 @@ div .badge{
 	padding: 2.5px 0;
 }
 
-.assign-list div ul .fa-times:hover{
+.assign-list div ul .fa-times:hover, .assign-list div ul .fa-plus:hover{
 	color: red;
 	cursor: pointer;
 }
-
 .ta-desc .fa-times:hover{
 	cursor: pointer;
 	color: red;

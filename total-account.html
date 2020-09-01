@@ -315,11 +315,11 @@
 								<span>تمام تفصیلی ها</span>
 								<div>
 									<ul>
-										<li>پروژه</li>
-										<li>قرارداد</li>
-										<li>شرکت</li>
-										<li>شخص</li>
-										<li>مرکز هزینه</li>
+										<li><span class="fas fa-plus"></span><span>پروژه</span></li>
+										<li><span class="fas fa-plus"></span><span>قرارداد</span></li>
+										<li><span class="fas fa-plus"></span><span>شرکت</span></li>
+										<li><span class="fas fa-plus"></span><span>شخص</span></li>
+										<li><span class="fas fa-plus"></span><span>مرکز هزینه</span></li>
 									</ul>
 								</div>
 							</div>
@@ -393,27 +393,27 @@
 				'<span>' + t + '</span><span>&nbsp;&nbsp;</span><span class="fas fa-times"></span></div>';			
 			$("#description").children(".list-group").append(item);
 			$(".ta-desc .fa-times").click(function(){
-			$(this).parent().remove();
-		});
+				$(this).parent().remove();
+			});
 		});
 
 		
 		
-		$("#assign-col-3 li").dblclick(addCol2);
+		$("#assign-col-3 .fa-plus").click(addCol2);
 		$("#assign-col-2 .fa-times").click(addCol3);
 
 		function addCol3(){
 			var sibling = $(this).next();
 			$(this).parent().remove();
-			var temp = $('<li>' + sibling.html() + '</li>');
-			$(temp).dblclick(addCol2);
+			var temp = $('<li><span class="fas fa-plus"></span><span>' + sibling.html() + '</span></li>');
+			$(temp).children(".fa-plus").click(addCol2);
 			$("#assign-col-3 ul").append(temp);
 		}
 
 		function addCol2(){
-			var item = $(this).html();
-			$(this).remove();
-			var temp = $('<li><span class="fas fa-times"></span><span>' + item + '</span></li>');
+			var sibling = $(this).next();
+			$(this).parent().remove();
+			var temp = $('<li><span class="fas fa-times"></span><span>' + sibling.html() + '</span></li>');
 			$(temp).children(".fa-times").click(addCol3);
 			$("#assign-col-2 ul").append(temp);
 		}
