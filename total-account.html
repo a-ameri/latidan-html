@@ -334,22 +334,22 @@
 							<div class="input-group mb-3">										
 								<input type="text" class="form-control ltd-0radius" id="desc" name="desc">
 								<div class="input-group-append">
-								  <button class="btn btn-success ltd-0radius" type="button">+</button>
+								  <button id="add-desc" class="btn btn-success ltd-0radius" type="button">+</button>
 								</div>
 							</div>
 						</div>
-						<div class="list-group ta-desc">
-							<div id="desc01" class="list-group-item list-group-item-action">
+						<div class="list-group">
+							<div id="desc01" class="list-group-item list-group-item-action ta-desc">
 								<span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</span>
 								<span>&nbsp;&nbsp;</span>
 								<span class="fas fa-times"></span>
 							</div>
-							<div id="desc02" class="list-group-item list-group-item-action">
+							<div id="desc02" class="list-group-item list-group-item-action ta-desc">
 								<span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</span>
 								<span>&nbsp;&nbsp;</span>
 								<span class="fas fa-times"></span>
 							</div>
-							<div id="desc03" class="list-group-item list-group-item-action">
+							<div id="desc03" class="list-group-item list-group-item-action ta-desc">
 								<span>متن بعدی</span>
 								<span>&nbsp;&nbsp;</span>
 								<span class="fas fa-times"></span>								
@@ -382,6 +382,22 @@
 				$(this).addClass("active");
 			});
 		});
+
+		$(".ta-desc .fa-times").click(function(){
+			$(this).parent().remove();
+		});
+
+		$("#add-desc").click(function(){
+			var t = $(this).parent().prev().val();
+			var item = '<div id="desc03" class="list-group-item list-group-item-action ta-desc">' +
+				'<span>' + t + '</span><span>&nbsp;&nbsp;</span><span class="fas fa-times"></span></div>';			
+			$("#description").children(".list-group").append(item);
+			$(".ta-desc .fa-times").click(function(){
+			$(this).parent().remove();
+		});
+		});
+
+		
 		
 		$("#assign-col-3 li").dblclick(addCol2);
 		$("#assign-col-2 .fa-times").click(addCol3);
