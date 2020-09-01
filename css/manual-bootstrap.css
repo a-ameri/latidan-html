@@ -18,3 +18,7 @@
 .nav-tabs .nav-link{
 	border-radius: 0 !important;
 }
+
+.nav li{
+	margin-left: 3px;
+}
