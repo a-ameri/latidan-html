@@ -376,48 +376,78 @@
 
 	<!--begin script-->
 	<script>
+
 		$(document).ready(function(){
 			$(".level-item").click(function(){
 				$(".level-item").removeClass("active");
 				$(this).addClass("active");
 			});
-		});
 
-		$(".ta-desc .fa-times").click(function(){
-			$(this).parent().remove();
-		});
 
-		$("#add-desc").click(function(){
-			var t = $(this).parent().prev().val();
-			var item = '<div id="desc03" class="list-group-item list-group-item-action ta-desc">' +
-				'<span>' + t + '</span><span>&nbsp;&nbsp;</span><span class="fas fa-times"></span></div>';			
-			$("#description").children(".list-group").append(item);
+			/*begin description panel*/
 			$(".ta-desc .fa-times").click(function(){
 				$(this).parent().remove();
 			});
-		});
 
-		
-		
-		$("#assign-col-3 .fa-plus").click(addCol2);
-		$("#assign-col-2 .fa-times").click(addCol3);
+			$("#add-desc").click(function(){
+				var t = $(this).parent().prev().val();
+				var item = '<div id="desc03" class="list-group-item list-group-item-action ta-desc">' +
+					'<span>' + t + '</span><span>&nbsp;&nbsp;</span><span class="fas fa-times"></span></div>';			
+				$("#description").children(".list-group").append(item);
+				$(".ta-desc .fa-times").click(function(){
+					$(this).parent().remove();
+				});
+			});
+			/*end description panel*/
 
-		function addCol3(){
-			var sibling = $(this).next();
-			$(this).parent().remove();
-			var temp = $('<li><span class="fas fa-plus"></span><span>' + sibling.html() + '</span></li>');
-			$(temp).children(".fa-plus").click(addCol2);
-			$("#assign-col-3 ul").append(temp);
-		}
+			/*begin checked boxes function*/
+			$("#assign-col-1 #chb05").prop('disabled', true);
+			$("#assign-col-1 #chb06").prop('disabled', true);
 
-		function addCol2(){
-			var sibling = $(this).next();
-			$(this).parent().remove();
-			var temp = $('<li><span class="fas fa-times"></span><span>' + sibling.html() + '</span></li>');
-			$(temp).children(".fa-times").click(addCol3);
-			$("#assign-col-2 ul").append(temp);
-		}
+			$("#assign-col-1 #chb04").change(function(){
+				if($(this).prop("checked")){
+					$("#assign-col-1 #chb05").prop('disabled', false);
+				}
+				else{
+					$("#assign-col-1 #chb05").prop('disabled', true);
+					$("#assign-col-1 #chb06").prop('disabled', true);
+					$("#assign-col-1 #chb05").prop('checked', false);
+					$("#assign-col-1 #chb06").prop('checked', false);
+				}
+			});
 
+			$("#assign-col-1 #chb05").change(function(){
+				if($(this).prop("checked")){
+					$("#assign-col-1 #chb06").prop('disabled', false);
+				}
+				else{
+					$("#assign-col-1 #chb06").prop('disabled', true);
+					$("#assign-col-1 #chb06").prop('checked', false);
+				}
+			});
+			/*end checked boxes function*/
+			
+			/*begin Add plus and times*/
+			$("#assign-col-3 .fa-plus").click(addCol2);
+			$("#assign-col-2 .fa-times").click(addCol3);
+
+			function addCol3(){
+				var sibling = $(this).next();
+				$(this).parent().remove();
+				var temp = $('<li><span class="fas fa-plus"></span><span>' + sibling.html() + '</span></li>');
+				$(temp).children(".fa-plus").click(addCol2);
+				$("#assign-col-3 ul").append(temp);
+			}
+
+			function addCol2(){
+				var sibling = $(this).next();
+				$(this).parent().remove();
+				var temp = $('<li><span class="fas fa-times"></span><span>' + sibling.html() + '</span></li>');
+				$(temp).children(".fa-times").click(addCol3);
+				$("#assign-col-2 ul").append(temp);
+			}
+			/*end Add plus and times*/
+		});		
 	</script>
 	<!--end script-->
 
