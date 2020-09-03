@@ -10,6 +10,12 @@ img[alt="save"]{
 div[class~="col-2"] label{
 	margin-top: 5px;
 }
+table{
+	margin: 5px 5px auto 10px;
+}
+table tbody td{
+	font-size: large;
+}
 .nav-tabs .nav-link.active{
 
 	color: #557463;
