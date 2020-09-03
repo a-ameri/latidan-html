@@ -40,7 +40,7 @@
 
 		<div class="col-md-5 d-flex justify-content-start w-100 ltd-dubai-medium">
 
-			<div class="badge mt-1 pt-1">
+			<div id="ltd-new-account" class="badge mt-1 pt-1">
 
 				<img src="images/Add Tree.png" alt="add tree" height="100%">
 
@@ -226,6 +226,22 @@
 					
 					$("#ltd-tree-view li").click(li_click);
 					$("#ltd-tree-view li").dblclick(li_click);
+
+					$("#ltd-tree-view > li").click(function(){
+						$("#ltd-new-account").removeClass("ltd-disabled-button");
+						$("#ltd-new-account > span").html("گروه حساب جدید");
+					});
+					$("#ltd-tree-view > ul > li ").click(function(){
+						$("#ltd-new-account").removeClass("ltd-disabled-button");
+						$("#ltd-new-account > span").html("حساب کل جدید");
+					});
+					$("#ltd-tree-view > ul > ul > li").click(function(){
+						$("#ltd-new-account").removeClass("ltd-disabled-button");
+						$("#ltd-new-account > span").html("حساب معین جدید");
+					});
+					$("#ltd-tree-view ul > ul > ul > li").click(function(){
+						$("#ltd-new-account").addClass("ltd-disabled-button");
+					});
 				});
 
 		</script>
