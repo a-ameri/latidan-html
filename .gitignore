@@ -10,3 +10,4 @@
 #do not ignore
 !/css/manual-bootstrap.css
 !/css/ltd*
+/ignore-files/
