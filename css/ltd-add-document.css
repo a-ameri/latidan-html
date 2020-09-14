@@ -21,13 +21,14 @@ div[class~="col-2"] label{
 }
 
 .nav-link{
-
 	color: 	#294f3a;
-
-	background-color: #ebf7f4;
-
+	background-color: #cff0e8;
 	
-
+}
+.nav-link:hover{
+	color: #557463;
+	background-color: #ebf7f4;
+	
 }
 
 .nav-tabs .nav-link{
@@ -50,48 +51,6 @@ div .badge{
 
 	cursor: pointer;
 
-}
-
-.level-item{
-	border: none;
-}
-
-.level-item.active{
-	background-color: #ebf7f4;
-	color: #495057;
-}
-
-.level-item span{
-	margin-right: 20px;
-}
-
-.assign-list > span{
-	font-weight: bold;
-}
-
-.assign-list span{
-	margin-right: 20px;
-}
-
-.assign-list div{
-	margin-top: 20px;
-}
-
-.assign-list div ul{
-	list-style-type: none;
-}
-
-.assign-list div ul li{
-	padding: 2.5px 0;
-}
-
-.assign-list div ul .fa-times:hover, .assign-list div ul .fa-plus:hover{
-	color: red;
-	cursor: pointer;
-}
-.ta-desc .fa-times:hover{
-	cursor: pointer;
-	color: red;
 }
 
 #tab-content{
@@ -117,7 +76,7 @@ div .badge{
 
 }
 
-#account, #history{
+#document, #history{
 
 	height: 390px;
 
@@ -133,39 +92,6 @@ div .badge{
 }
 #ltd-precode{
 	margin-bottom: 0.25%;
-}
-#assign-col-1{
-	margin-top: 1%;
-	margin-right: 3%;
-	width: 20%;
-	height: 80%;
-	position: fixed;
-	overflow-x: hidden;
-}
-#assign-col-2{
-	margin-top: 1%;
-	margin-right: 24%;
-	width: 35%;
-	height: 80%;
-	position: fixed;
-	overflow-x: hidden;
-}
-#assign-col-3{
-	margin-top: 1%;
-	margin-right: 60%;
-	width: 35%;
-	height: 80%;
-	position: fixed;
-	overflow-x: hidden;
-}
-#assign-col-3 div ul li:hover{
-	background-color: #97c0b6;
-	display: block;
-	margin-left: 20px;
-	cursor: pointer;
-}
-#description{
-	margin: 10px;
 }
 
 #turnover{
