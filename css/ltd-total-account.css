@@ -10,6 +10,12 @@ img[alt="save"]{
 div[class~="col-2"] label{
 	margin-top: 5px;
 }
+.table{
+	width: 99%;
+}
+.table td, .table th {
+    padding: 5px;
+}
 .nav-tabs .nav-link.active{
 
 	color: #557463;
