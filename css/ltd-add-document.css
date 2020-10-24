@@ -82,10 +82,10 @@ div .badge{
 
 }
 #document label{
-	width: 20%;
+	width: 30%;
 }
 #document input[type="text"],#document select{
-	width: 70%;	
+	width: 60%;	
 	height: 20px;
 	display: inline-block;
 }
@@ -98,12 +98,6 @@ div .badge{
 }
 #document div div{
 	margin: 3px auto;
-}
-#document div[class="col-6"] label{
-	width: 9.5%;	
-}
-#document div[class="col-6"] input{
-	width: 86%;	
 }
 #main-content{
 	position: fixed;
