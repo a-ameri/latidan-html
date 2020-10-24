@@ -27,21 +27,24 @@
 .ltd-0radius{
 	border-radius: 0 !important;
 }
-.ltd-dubai-regular{
-	font-family: dubai-regular;	
+.ltd-IRANSans-regular{
+	font-family: IRANSans-regular;	
 }
-.ltd-dubai-light{
-	font-family: Dubai-light;	
+.ltd-IRANSans-light{
+	font-family: IRANSans-light;	
 }
-.ltd-title-font{
-	font-family: Dubai-bold;
+.ltd-IRANSans-ultra-light{
+	font-family: IRANSans-light;	
+}
+.ltd-IRANSans-font{
+	font-family: IRANSans-bold;
 	color: #294f3a;
 }
-.ltd-dubai-bold{
-	font-family: Dubai-bold;
+.ltd-IRANSans-bold{
+	font-family: IRANSans-bold;
 }
-.ltd-dubai-medium{
-	font-family: Dubai-medium;	
+.ltd-IRANSans-medium{
+	font-family: IRANSans-medium;	
 }
 .ltd-color1{
 	color: #294f3a;

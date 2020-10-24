@@ -1,18 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face{
-	font-family: "Dubai-bold";
-	src: url("../font/LATIDAN-BOLD.otf");
+	font-family: "IRANSans-bold";
+	src: url("../font/IRANSansWeb_Bold.ttf");
 }
 @font-face{
-	font-family: "Dubai-light";
-	src: url("../font/LATIDAN-REGULAR.otf");
+	font-family: "IRANSans-light";
+	src: url("../font/IRANSansWeb_Light.ttf");
 }
 @font-face{
-	font-family: "Dubai-medium";
-	src: url("../font/LATIDAN-MEDIUM.otf");
+	font-family: "IRANSans-medium";
+	src: url("../font/IRANSansWeb_Medium.ttf");
 }
 @font-face{
-	font-family: "Dubai-regular";
-	src:url("../font/LATIDAN-REGULAR.otf");
+	font-family: "IRANSans-regular";
+	src:url("../font/IRANSansWeb.ttf");
+}
+@font-face{
+	font-family: "IRANSans-ultralight";
+	src:url("../font/IRANSansWeb_UltraLight.ttf");
 }

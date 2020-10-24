@@ -30,227 +30,99 @@
 
 
 
-<body dir="rtl" class="ltd-dubai-regular ltd-bg-tab text-right">
+<body dir="rtl" class="ltd-IRANSans-regular ltd-bg-tab text-right">
 
 	<div class="container-fluid ">
 
 		<!--begin action header-->
+		<div id="ltd-action" class="row w-100 ltd-bg7">
 
-	<div id="ltd-action" class="row w-100 ltd-bg7">
+			<div class="col-12 d-flex justify-content-start w-100 ltd-IRANSans-medium">
 
-		<div class="col-12 d-flex justify-content-start w-100 ltd-dubai-medium">
+				<div class="badge ">
 
-			<div class="badge ">
+					<img src="images/save.png" alt="save" height="100%">
 
-				<img src="images/save.png" alt="save" height="100%">
+				</div>
 
-			</div>
+				<div class="badge  mr-2">
 
-			<div class="badge  mr-2">
+					<img src="images/save add.png" alt="save add" height="100%">
 
-				<img src="images/save add.png" alt="save add" height="100%">
+				</div>
 
-			</div>
+				<div class="badge  mr-2">
 
-			<div class="badge  mr-2">
+					<img src="images/save close.png" alt="save close" height="100%">
 
-				<img src="images/save close.png" alt="save close" height="100%">
+				</div>
 
 			</div>
 
 		</div>
-
-	</div>
-
-	<!--end action header-->
+		<!--end action header-->
 
 		<!--begin document content-->
-
 		<div id="main-content" class="row">
 
 			<!--begin tab title-->
-
 			<div class="col-12">
 
-				<ul class="nav nav-tabs ltd-dubai-bold border-0 p-0" >
+				<ul class="nav nav-tabs ltd-IRANSans-bold border-0 p-0" >
 
 					<li class="nav-item ltd-bg-tab" dir="ltr">
 
-						<a data-toggle="tab" href="#document" class="nav-link active"> اطلاعات حساب
+						<a data-toggle="tab" href="#document" class="nav-link active"> اطلاعات سند
 
 						</a>
 
-					  </li>
+					</li>
 					
 					<li class="nav-item ltd-bg-tab" dir="ltr">
 
-						<a data-toggle="tab" href="#history" class="nav-link"> گردش حساب
+						<a data-toggle="tab" href="#history" class="nav-link"> تاریخچه تغییرات
 
 						</a>
 
-					  </li>
+					</li>
 				</ul>
 
 			</div>
-
 			<!--end tab title-->
 
 			<!--begin tab content-->
-
 			<div id="sub-content" class="col-12">
 
-				<div id="tab-content" class="ltd-tabs tab-content ltd-dubai-regular">
+				<div id="tab-content" class="ltd-tabs tab-content ltd-IRANSans-regular">
 
 					<div id="document" class="tab-pane fade in active show">
 
 						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="AAIsActive" class="ltd-dubai-bold">حساب معین</label>
-
-							</div>						  
-
+							<div class="col-md-3">
+								<label>شماره سند</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
+							</div>
+							<div class="col-md-3">
+								<label>تاریخ سند</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
+							</div>
+							<div class="col-md-3">
+								<label>شماره عطف</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
+							</div>
+							<div class="col-md-3">
+								<label>شماره روزانه</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
+							</div>
 						</div>
-						
-						<!--AAIsActive-->
 						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="AAIsActive" >وضعیت حساب</label>
-
+							<div class="col-md-3">
+								<label>صادر کننده</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
 							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-								<select class="form-control font-weight-light ltd-dubai-regular ltd-0radius" id="AAIsActive" name="AAIsActive">
-
-									<option>فعال</option>
-
-									<option>غیر فعال</option>
-
-							  	</select>
-
-							</div>
-
-						</div>
-						<!--AACode-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-							  <label for="AACode">کد حساب</label>
-
-							</div>
-
-							<div class="input-group col-7 ml-3 my-2 input-group-sm">
-
-							  <input type="text" class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AACode">
-								<div id="ltd-precode" class="input-group-append">
-								  <span class="input-group-text ltd-0radius border-0">1001</span>
-								</div>
-							</div>
-
-						</div>						
-						<!--AAName-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-							  <label for="AAName">عنوان حساب</label>
-
-							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-							  <input type="text" class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AAName">
-
-							</div>
-
-						</div>
-						<!--ATID-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="ATID">نوع حساب</label>
-
-							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="ATID" name="ATID">
-
-									<option>دائم</option>
-
-									<option>موقت</option>
-
-									<option>انتظامی</option>
-
-							  	</select>
-
-							</div>
-
-						</div>
-						<!--AEID-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="AEID">ماهیت حساب</label>
-
-							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AEID" name="AEID">
-
-									<option>بدهکار</option>
-
-									<option>بستانکار</option>
-
-									<option>مهم نیست</option>
-
-							  	</select>
-
-							</div>
-
-						</div>
-						<!--AAIsFollow-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="AAIsFollow">ویژگی پیگیری</label>
-
-							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="AAIsFollow" name="AAIsFollow">
-
-									<option>دارد</option>
-
-									<option>ندارد</option>
-
-							  	</select>
-
-							</div>
-
-						</div>
-						<!--CAID-->
-						<div class="row">
-
-							<div class="col-2 mr-5 my-2">
-
-								<label for="CAID">کنترل ماهیت</label>
-
-							</div>
-
-							<div class="col-7 ml-3 my-2 input-group-sm">
-
-								<select class="ltd-0radius form-control font-weight-light ltd-dubai-regular" id="CAID" name="CAID">
+							<div class="col-3">
+								<label>نوع سند</label>
+								<select class="ltd-0radius form-control font-weight-light ltd-IRANSans-regular" id="CAID" name="CAID">
 
 									<option>مهم نیست</option>
 
@@ -259,47 +131,28 @@
 									<option>معین و تمامی سطوح تفصیلی</option>
 
 							  	</select>
-
 							</div>
-
+							<div class="col-6">
+								<label>شرح سند</label>
+								<input type="text" class="form-control ltd-0radius input-group-sm"/>
+							</div>							
 						</div>
 
 					</div>
 
 					<div id="history" class="tab-pane fade">
 
-						<table id="turnover" class="table table-bordered">
-							<thead>
-							  	<tr>
-									<th>بدهکار</th>
-									<th>بستانکار</th>
-									<th>مانده بدهکار</th>
-									<th>مانده بستانکار</th>
-									<th>نوع ارز</th>
-									<th>مانده ارز</th>
-							  	</tr>
-							</thead>
-							<tbody>
-							  	<tr>
-									<td>1,855,872,742,572</td>
-									<td>1,787,572,591,713</td>
-									<td>68,300,150,859</td>
-									<td></td>
-									<td></td>
-									<td></td>
-							  	</tr>
-							</tbody>
-						</table>
+						123
 
 					</div>						
 
 				</div>
 
 			</div>
-
 			<!--end tab content-->
 
 		</div>
+		<!--end document content-->
 
 	</div>
 
