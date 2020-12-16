@@ -10,6 +10,12 @@ img[alt="save"]{
 div[class~="col-2"] label{
 	margin-top: 5px;
 }
+#table-div{
+	position: absolute;
+	height: 250px;
+	width: 100%;
+	overflow-y: scroll;
+}
 .nav-tabs .nav-link.active{
 
 	color: #557463;
@@ -51,6 +57,17 @@ div .badge{
 
 	cursor: pointer;
 
+}
+.p-x1px{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.end-footer-row input{
+	font-size: x-small;
+	direction: ltr;
+}
+.footer-header{
+	height: 25px;
 }
 
 #tab-content{
@@ -108,20 +125,21 @@ div .badge{
 	position: fixed;
 	margin-top: 37px;
 }
-#ltd-precode{
-	margin-bottom: 0.25%;
+#footer{
+	position: absolute;
+	bottom: 10px;
+	width: 99%;
+	margin: auto 0.25rem !important;
 }
+#ltd-action-footer{
 
-#turnover{
-	margin: 5px 5px auto 10px;
+	margin: 5px 0;
+
+    height: 30px;
+
 }
-#turnover td, #turnover th{
-	border: 1px solid #294f3a;
-}
-#turnover thead tr{
-	height: 15px;
-	background-color: #cde7f1;
-}
-#turnover tbody td{
-	font-size: large;
+#ltd-action-footer div{
+
+	height: inherit;
+	margin: 0 !important;
 }
