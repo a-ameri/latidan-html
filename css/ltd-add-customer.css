@@ -93,10 +93,10 @@ div .badge{
 
 }
 #document label{
-	width: 30%;
+	width: 40%;
 }
 #document input[type="text"],#document select{
-	width: 60%;	
+	width: 50%;	
 	height: 20px;
 	display: inline-block;
 }
